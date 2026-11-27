@@ -1,0 +1,33 @@
+name: vibeplay
+description: VibePlay - Standard Offline Music Player
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Audio playback + background/notification support (MediaSession + foreground service)
+  just_audio: ^0.9.46
+  just_audio_background: ^0.0.1-beta.17
+
+  # Runtime permissions (READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE / POST_NOTIFICATIONS)
+  permission_handler: ^11.3.1
+
+  # Local database (favourites + playlists)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # State management
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
